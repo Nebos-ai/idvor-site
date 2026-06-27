@@ -93,7 +93,7 @@ export default function PlatformPage() {
       <Section divider>
         <p className="eyebrow">Deterministic first</p>
         <h2 style={{ marginTop: 20, fontSize: "clamp(26px,3.6vw,44px)", maxWidth: "18ch" }}>
-          Six detectors run before a single token is spent.
+          Six checks run before any AI cost is incurred.
         </h2>
         <div className="grid grid-3" style={{ marginTop: 48 }}>
           {detectors.map((d) => (
@@ -103,7 +103,7 @@ export default function PlatformPage() {
         {/* honest-default: no published token-reduction % exists; kept the qualitative claim (deterministic-first → far fewer model calls) with no specific number. */}
         <p className="mono faint" style={{ marginTop: 28, fontSize: 12 }}>
           Because the deterministic detectors do the watching, model calls track the number of real
-          problems — not the volume of events — so far fewer tokens are spent than a
+          problems — not the volume of events — so far less AI cost is incurred than a
           model-call-per-event approach.
         </p>
       </Section>

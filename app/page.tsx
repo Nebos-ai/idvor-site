@@ -36,7 +36,7 @@ const fiveQuestions = [
 
 const audiences = [
   { dep: "Operations / COO", title: "Stop finding out on Friday.", body: "The stalled handoff and the slipping deadline surface while you can still move on them — not in next week's post-mortem." },
-  { dep: "Engineering / CTO", title: "Six checks before one token.", body: "Model-agnostic by design. Deterministic detection runs first; it works with any LLM, locked to none — over a dashboard and an MCP interface." },
+  { dep: "Engineering / CTO", title: "Six checks before any AI cost.", body: "Works with any AI provider — no lock-in. The continuous checks run first; only a real risk reaches a model — over a dashboard and an agent interface." },
   { dep: "Finance / CFO", title: "Worth more next year.", body: "Predictable cost on top of whatever model you run, and the rare tool that compounds instead of depreciating." },
   { dep: "Risk / Legal", title: "It never acts alone.", body: "Five enforcement layers, every decision sourced, built to the EU AI Act's high-risk bar — not retrofitted to it." },
   { dep: "Department leads", title: "A colleague who did the homework.", body: "Pearl arrives caught up and asks why the date moved — never how you feel. One agent per team." },
@@ -202,7 +202,7 @@ export default function HomePage() {
             <Chip lead>Human approval gate</Chip>
             <Chip>5 enforcement layers</Chip>
             <Chip>Every decision sourced</Chip>
-            <Chip>Tenant isolation · RLS</Chip>
+            <Chip>Tenant isolation · Access scoped by role</Chip>
             <Chip>Built to EU AI Act high-risk</Chip>
           </div>
         </div>

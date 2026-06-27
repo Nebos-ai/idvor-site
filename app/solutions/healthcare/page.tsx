@@ -72,7 +72,7 @@ export default function HealthcarePage() {
           ))}
         </div>
         <div style={{ marginTop: 32, display: "flex", gap: 10, flexWrap: "wrap" }}>
-          <Chip lead>Role-scoped access · RLS</Chip>
+          <Chip lead>Role-scoped access</Chip>
           <Chip>Structured signal, not records</Chip>
           <Chip>Human approval gate</Chip>
           <Chip>Full audit trail</Chip>

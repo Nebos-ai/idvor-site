@@ -54,15 +54,15 @@ export default function IntegrationsPage() {
         </div>
       </Section>
 
-      {/* AGENT INTERFACE (MCP) */}
+      {/* AGENT INTERFACE */}
       <Section divider>
-        <p className="eyebrow">Agent interface (MCP)</p>
+        <p className="eyebrow">Agent interface</p>
         <h2 style={{ marginTop: 20, fontSize: "clamp(26px,3.6vw,44px)", maxWidth: "20ch" }}>
           The same intelligence, available to your own agents.
         </h2>
         <p className="mist" style={{ marginTop: 24, fontSize: 18, maxWidth: "60ch" }}>
           Signal flows both ways. The intelligence Nebbos builds on the Operational Graph is available
-          to your own agents and tools over a standard MCP interface — so the predictions, reasoning
+          to your own agents and tools over a standard agent interface — so the predictions, reasoning
           and graph context can drive workflows you already run, on whichever model you choose.
         </p>
         <p className="mist" style={{ marginTop: 16, fontSize: 18, maxWidth: "60ch" }}>

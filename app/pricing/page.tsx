@@ -55,7 +55,7 @@ export default function PricingPage() {
       <PageHero
         eyebrow="Pricing"
         title="Priced per Pearl. Not per seat."
-        lead="You pay for the departments you put a Pearl on — and the work it does for them. Everyone on the team can use it. Annual plans available."
+        lead="A Pearl is your department's agent. You pay for the departments you put a Pearl on — and the work it does for them. Everyone on the team can use it. Annual plans available."
       />
 
       <Section>
