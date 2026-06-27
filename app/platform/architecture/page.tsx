@@ -69,7 +69,7 @@ export default function ArchitecturePage() {
           model call to reason about the firing pattern — so the cost of intelligence tracks the number
           of real problems, not the volume of events flowing through your tools.
         </p>
-        {/* FOUNDER-SIGNOFF: measured token reduction figure vs per-event-model baseline */}
+        {/* honest-default: no published token-reduction % exists; qualitative claim above kept, no specific number asserted. */}
         <div className="grid grid-3" style={{ marginTop: 48 }}>
           {detectors.map((d) => (
             <Tile key={d.k} label={d.k} title={d.title}>{d.body}</Tile>

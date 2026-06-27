@@ -77,9 +77,11 @@ export default function HealthcarePage() {
           <Chip>Human approval gate</Chip>
           <Chip>Full audit trail</Chip>
         </div>
-        {/* FOUNDER-SIGNOFF: HIPAA / clinical-compliance attestation and any healthcare reference customers — confirm posture and BAA availability before publishing a named compliance claim. */}
+        {/* honest-default: no attested HIPAA certification found in nebos-governance; reframed to control/workflow language, no named reference customer asserted. */}
         <p className="mono faint" style={{ marginTop: 20, fontSize: 12 }}>
-          Clinical-compliance posture and any reference customers are confirmed before publishing.
+          Nebbos is designed for HIPAA-aligned clinical workflows — data minimisation, role-scoped
+          access and a full audit trail by construction. Talk to us about a BAA and the controls for
+          your setting.
         </p>
       </Section>
 

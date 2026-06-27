@@ -78,9 +78,11 @@ export default function PublicSectorPage() {
           <Chip>Human approval gate</Chip>
           <Chip>Full audit trail</Chip>
         </div>
-        {/* FOUNDER-SIGNOFF: any public-sector accreditation or framework (e.g. government cloud / data-residency assurances) and any reference bodies — confirm posture before publishing a named claim. */}
+        {/* honest-default: no public-sector accreditation found in nebos-governance; reframed to capability/design language, no named reference body asserted. */}
         <p className="mono faint" style={{ marginTop: 20, fontSize: 12 }}>
-          Data-residency posture and any reference bodies are confirmed before publishing.
+          Nebbos is built for the transparency public bodies operate under — sourced decisions, a full
+          audit trail and role-scoped access by construction. Talk to us about data-residency options
+          for your jurisdiction.
         </p>
       </Section>
 

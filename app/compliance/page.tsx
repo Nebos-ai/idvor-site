@@ -55,25 +55,26 @@ export default function CompliancePage() {
       </Section>
 
       <Section divider>
-        <p className="eyebrow">Certifications</p>
+        <p className="eyebrow">Control frameworks</p>
         <h2 style={{ marginTop: 20, fontSize: "clamp(26px,3.6vw,44px)", maxWidth: "22ch" }}>
-          Independent attestation, stated honestly.
+          The controls we build to, stated honestly.
         </h2>
         <p className="mist" style={{ marginTop: 24, fontSize: 18, maxWidth: "60ch" }}>
-          We hold ourselves to the controls behind SOC 2 and ISO 27001, and we&rsquo;ll publish formal
-          certification status only once it&rsquo;s confirmed — never before. For an active evaluation, the
-          security package and supporting documentation are available under NDA.
+          Nebbos is engineered to the controls behind SOC 2 and ISO 27001 — they shape how the platform is
+          built, not a certificate we currently hold. We don&rsquo;t present a certification we haven&rsquo;t
+          earned. For an active evaluation, the security package and supporting documentation are available
+          under NDA.
         </p>
         <div style={{ marginTop: 32, display: "flex", gap: 10, flexWrap: "wrap" }}>
           <Chip lead>EU AI Act · high-risk ready</Chip>
-          <Chip>GDPR</Chip>
-          <Chip>SOC 2</Chip>
-          <Chip>ISO 27001</Chip>
+          <Chip>GDPR-aligned</Chip>
+          <Chip>Built to the SOC 2 control framework</Chip>
+          <Chip>Aligned with ISO 27001</Chip>
         </div>
-        {/* FOUNDER-SIGNOFF: SOC 2 / ISO 27001 certification status — do NOT present these as held certifications until formally confirmed. Chips above intentionally describe the posture, not an achieved badge. */}
+        {/* honest-default: removed SOC 2 / ISO 27001 cert badges + "independent attestation" framing (no attested certificate found in nebos-governance); reframed to control-framework language. */}
         <p className="mono faint" style={{ marginTop: 20, fontSize: 12 }}>
-          Certification status is confirmed before publishing. Badges above describe the controls we build
-          to, not an attested certification.
+          The frameworks above describe the controls Nebbos is built to — not a formal certification we
+          currently hold.
         </p>
       </Section>
 

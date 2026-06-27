@@ -79,10 +79,12 @@ export default function TrustPage() {
             <Tile key={t} title={t}>{d}</Tile>
           ))}
         </div>
-        {/* FOUNDER-SIGNOFF: live trust portal link + certification badges (SOC 2 / ISO 27001) — wire and confirm status before publishing. */}
+        {/* honest-default: dropped "live trust portal" claim (no portal exists); point to the real /security, /compliance and /status pages instead. No cert badges asserted. */}
         <p className="mono faint" style={{ marginTop: 20, fontSize: 12 }}>
-          A live trust portal and the full documentation set land here; certification status is confirmed
-          before publishing.
+          Go deeper on <a href="/security" className="text-blue">security</a>,{" "}
+          <a href="/compliance" className="text-blue">compliance</a> and{" "}
+          <a href="/status" className="text-blue">system status</a>. The full documentation set is
+          available for active evaluations.
         </p>
       </Section>
 

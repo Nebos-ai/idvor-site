@@ -131,10 +131,10 @@ export default function K12Page() {
           <Chip>Human approval gate</Chip>
           <Chip>Full audit trail</Chip>
         </div>
-        {/* FOUNDER-SIGNOFF: FERPA formal attestation / counsel-reviewed wording, and any K-12 district reference customers — confirm before publishing a named compliance claim or naming a district. */}
+        {/* honest-default: FERPA = aggregate-only posture (kept); no formal attestation found in nebos-governance and no real district named — customer stories are explicitly illustrative. */}
         <p className="mono faint" style={{ marginTop: 20, fontSize: 12 }}>
-          FERPA alignment is by design; formal attestation and district reference customers are
-          confirmed before publishing.
+          FERPA is handled as an aggregate, structural posture by design — never per-student records.
+          Any district story shown is illustrative until a reference customer is confirmed.
         </p>
       </Section>
 

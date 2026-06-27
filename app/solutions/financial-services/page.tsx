@@ -78,9 +78,11 @@ export default function FinancialServicesPage() {
           <Chip>Human approval gate</Chip>
           <Chip>Full audit trail</Chip>
         </div>
-        {/* FOUNDER-SIGNOFF: any named regulatory framework (e.g. SOC 2, SOX, examiner-specific) and any reference customers — confirm posture and evidence before publishing a named compliance claim. */}
+        {/* honest-default: no attested SOC 2 / SOX certification found in nebos-governance; reframed to control/design language, no named reference customer asserted. */}
         <p className="mono faint" style={{ marginTop: 20, fontSize: 12 }}>
-          Regulatory posture and any reference customers are confirmed before publishing.
+          Nebbos is engineered to the controls examiners look for — sourced decisions, a full audit
+          trail and role-scoped access by construction. Talk to us about the evidence package for your
+          regulatory framework.
         </p>
       </Section>
 

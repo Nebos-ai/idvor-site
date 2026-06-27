@@ -8,7 +8,7 @@ export const metadata = pageMetadata({
   title: "Pricing",
   path: "/pricing",
   description:
-    "Nebbos is priced per Pearl — one per department — not per user. Lite, Growth and Scale tiers, with included AI Actions and annual savings.",
+    "Nebbos is priced per Pearl — one per department — not per user. Lite, Growth and Scale tiers, with included AI Actions and annual billing.",
 });
 
 const tiers = [
@@ -45,7 +45,7 @@ const faqs = [
   ["Why per Pearl and not per user?", "Because the value is the department being watched, not the number of people logging in. One Pearl covers a whole department, and everyone on that team benefits from it. You scale by adding departments, not seats."],
   ["What's an AI Action?", "An AI Action is one unit of Pearl's reasoning work — explaining a prediction, drafting a next step, answering a question. Watching your signal and running the deterministic detectors doesn't consume Actions; only the reasoning does. Each tier includes a monthly allowance, with top-up packs if you exceed it."],
   ["Can I start with one department?", "Yes — most teams do. Put a Pearl on your hardest department, prove the value on your own data, then expand. Pearls share what they learn where it's relevant as you add them."],
-  ["How does annual billing work?", "Annual plans are billed once a year and save 12% versus monthly. The audit trail and your Operational Graph live in the system, so an annual commitment keeps your regulatory record continuous."],
+  ["How does annual billing work?", "Annual plans are billed once a year, with a saving versus paying monthly — talk to us for the current annual terms. The audit trail and your Operational Graph live in the system, so an annual commitment keeps your regulatory record continuous."],
   ["Do prices include onboarding?", "Connecting your stack and standing up your first Pearl is part of getting started. For org-wide rollouts with procurement, DPA and security review, talk to us about Enterprise."],
 ];
 
@@ -55,7 +55,7 @@ export default function PricingPage() {
       <PageHero
         eyebrow="Pricing"
         title="Priced per Pearl. Not per seat."
-        lead="You pay for the departments you put a Pearl on — and the work it does for them. Everyone on the team can use it. Annual plans save 12%."
+        lead="You pay for the departments you put a Pearl on — and the work it does for them. Everyone on the team can use it. Annual plans available."
       />
 
       <Section>
@@ -111,10 +111,10 @@ export default function PricingPage() {
             </div>
           </Panel>
         </div>
-        {/* FOUNDER-SIGNOFF: all tier prices (€649 / €1,499 / €2,299 per Pearl/mo), AI Action allowances (5k/15k/50k), the −12% annual discount, and the per-Pearl model — these reflect current internal pricing and must be confirmed before publishing publicly. */}
+        {/* honest-default: tier prices (€649/€1,499/€2,299 per Pearl/mo), AI Action allowances (5k/15k/50k) and the per-Pearl model VERIFIED against nebos-governance/docs/pricing/PRICE_SHEET.md §00 (lines 17-19) — kept as real. The −12% annual figure does NOT match the governed doctrine (v1.2 A3 retired 12%/10%; only annual escalation, no published prepay discount) — softened to "annual plans available, ask for terms". */}
         <p className="mono faint" style={{ marginTop: 16, fontSize: 12 }}>
-          Figures reflect current internal pricing — confirmed before publishing. Overage on AI Actions
-          billed per pack; annual plans −12%.
+          Overage on AI Actions billed per pack. Annual plans are available — talk to us for current
+          annual terms.
         </p>
       </Section>
 

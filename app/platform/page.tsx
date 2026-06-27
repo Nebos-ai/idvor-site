@@ -100,10 +100,11 @@ export default function PlatformPage() {
             <Tile key={d.k} label={d.k} title={d.title}>{d.body}</Tile>
           ))}
         </div>
-        {/* FOUNDER-SIGNOFF: measured token-reduction figure vs a model-call-per-event baseline — supply from engineering, scoped to workload + baseline, before publishing a specific number. */}
+        {/* honest-default: no published token-reduction % exists; kept the qualitative claim (deterministic-first → far fewer model calls) with no specific number. */}
         <p className="mono faint" style={{ marginTop: 28, fontSize: 12 }}>
-          A measured token-reduction figure versus a model-call-per-event baseline is published once
-          confirmed by engineering, scoped to workload and baseline.
+          Because the deterministic detectors do the watching, model calls track the number of real
+          problems — not the volume of events — so far fewer tokens are spent than a
+          model-call-per-event approach.
         </p>
       </Section>
 

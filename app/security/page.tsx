@@ -37,13 +37,14 @@ export default function SecurityPage() {
       >
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
           <Chip lead>EU AI Act · high-risk ready</Chip>
-          <Chip>GDPR</Chip>
-          <Chip>SOC 2</Chip>
-          <Chip>ISO 27001</Chip>
+          <Chip>GDPR-aligned</Chip>
+          <Chip>Built to the SOC 2 control framework</Chip>
+          <Chip>Aligned with ISO 27001</Chip>
         </div>
-        {/* FOUNDER-SIGNOFF: SOC 2 / ISO 27001 certification chips above describe the controls we build to, not attested certifications — confirm status before presenting as held. */}
+        {/* honest-default: removed SOC 2 / ISO 27001 cert badges (imply attestation Nebbos does not hold per nebos-governance — no attested certificate found); reframed to control-framework language. */}
         <p className="mono faint" style={{ marginTop: 12, fontSize: 12 }}>
-          Certification status is confirmed before publishing.
+          We build to the SOC 2 and ISO 27001 control frameworks. These describe how the
+          platform is engineered — not a formal certification we currently hold.
         </p>
       </PageHero>
 
