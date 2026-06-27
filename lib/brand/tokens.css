@@ -1,0 +1,64 @@
+/* ============================================================================
+   TEMP — replace with @nebbos/brand package (ADR-270).
+   Placeholder until Figma + brand tokens land.
+
+   These tokens are seeded from the EXISTING static site's aesthetic
+   (legacy/assets/styles.css) so the scaffold reads as "Nebbos" while we wait
+   for the real, design-ratified token set. Everything below is intentionally
+   minimal and replaceable: swap this single file (or have @nebbos/brand emit
+   the same CSS custom properties) and the whole primitive layer re-themes.
+   Do NOT build an elaborate design system on top of this.
+   ============================================================================ */
+
+:root {
+  /* ---- color: surface (dark) ---- */
+  --nb-bg: #0b0b10; /* ink-900, page background */
+  --nb-bg-elev: #121219; /* panels / cards */
+  --nb-bg-elev-2: #15151e; /* hovered tiles */
+  --nb-bg-field: #0e0e14; /* form inputs */
+
+  /* ---- color: text ---- */
+  --nb-text: #f4f4f5; /* paper — primary text */
+  --nb-text-mist: #a6a6b2; /* secondary / lead */
+  --nb-text-faint: #6a6a77; /* captions, footnotes */
+
+  /* ---- color: accent ---- */
+  --nb-accent: #637dff; /* blue — primary accent */
+  --nb-accent-strong: #3b4acb; /* deep blue — glows */
+  --nb-accent-soft: #8fa1ff; /* light blue */
+  --nb-warn: #f6926c; /* tomato — Q2 / prediction */
+
+  /* ---- color: lines ---- */
+  --nb-line: rgba(255, 255, 255, 0.08);
+  --nb-line-strong: rgba(255, 255, 255, 0.14);
+  --nb-accent-line: rgba(99, 125, 255, 0.4);
+
+  /* ---- type ---- */
+  --nb-font-sans: var(--font-dm-sans), system-ui, sans-serif;
+  --nb-font-mono: var(--font-dm-mono), ui-monospace, monospace;
+
+  /* fluid heading scale (clamp) — matches legacy large-display rhythm */
+  --nb-h1: clamp(38px, 5.6vw, 76px);
+  --nb-h2: clamp(28px, 4vw, 50px);
+  --nb-h3: 19px;
+  --nb-eyebrow: 12px;
+  --nb-lead: clamp(17px, 1.5vw, 21px);
+
+  --nb-tracking-tight: -0.035em;
+  --nb-tracking-eyebrow: 0.2em;
+
+  /* ---- layout ---- */
+  --nb-container: 1160px;
+  --nb-gutter: 24px;
+  --nb-section-y: 96px;
+  --nb-section-y-lg: 128px;
+
+  /* ---- radii ---- */
+  --nb-radius-sm: 9px;
+  --nb-radius: 11px;
+  --nb-radius-lg: 16px;
+  --nb-radius-xl: 24px;
+
+  /* ---- motion ---- */
+  --nb-ease: cubic-bezier(0.22, 0.61, 0.18, 1);
+}
