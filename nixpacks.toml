@@ -1,0 +1,23 @@
+# Nixpacks build config for the Next.js standalone output (ADR-278 AD-1).
+# Replaces the legacy static-serve setup.
+#
+# `output: "standalone"` in next.config.ts produces .next/standalone/server.js,
+# but the static assets (.next/static) and public/ are NOT bundled into it — they
+# must be copied next to the server. We do that in the build phase so the start
+# command can run the standalone server directly.
+
+[phases.setup]
+nixPkgs = ["nodejs_22"]
+
+[phases.install]
+cmds = ["npm ci"]
+
+[phases.build]
+cmds = [
+  "npm run build",
+  "cp -r public .next/standalone/public",
+  "cp -r .next/static .next/standalone/.next/static",
+]
+
+[start]
+cmd = "node .next/standalone/server.js"
