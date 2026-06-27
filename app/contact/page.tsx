@@ -22,7 +22,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Get started"
         title="Let's get your first Pearl watching."
-        lead="Tell us a little about your team and the department you'd start with. We'll be in touch to set up access and connect your stack."
+        lead="Pearl is your department's agent. Tell us a little about your team and the department you'd start with, and we'll be in touch to set up access and connect your stack."
       />
 
       <Section>

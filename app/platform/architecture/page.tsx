@@ -13,7 +13,7 @@ export const metadata = pageMetadata({
 
 const pillars = [
   { k: "01", title: "Deterministic first", body: "Six detectors run continuously over the Operational Graph and cost nothing to watch — most of what happens never touches a model. A model call is the exception, raised only when a pattern fires, never the default." },
-  { k: "02", title: "Tiered routing", body: "When a pattern does fire, governance-tiered routing sends the reasoning to the right model at the right price. Heavy reasoning goes to a capable model; routine work to a cheaper one. You set the policy, and the tiers — G0 to G3 — decide what needs more scrutiny." },
+  { k: "02", title: "Tiered routing", body: "When a pattern does fire, governance-tiered routing sends the reasoning to the right model at the right price. Heavy reasoning goes to a capable model; routine work to a cheaper one. You set the policy, and the tiers — from read-only to rule-changing — decide what needs more scrutiny." },
   { k: "03", title: "Any provider", body: "Nebbos works across LLMs and providers — no vendor lock-in, no single bill holding you hostage. Swap your model next quarter and nothing downstream breaks, because the graph and the detectors don't depend on whose model answered." },
   { k: "04", title: "The simulation gate", body: "Before any consequential action runs, Nebbos forks your current operational state, runs the action forward against that private copy, checks the outcome, and throws the copy away — so the real thing only ever sees a move that's already been tested." },
 ];

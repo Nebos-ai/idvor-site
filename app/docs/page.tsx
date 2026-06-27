@@ -8,13 +8,13 @@ export const metadata = pageMetadata({
   title: "Docs",
   path: "/docs",
   description:
-    "An early overview of Nebbos: connectors, the agent interface (MCP), governance and approvals, and getting started. The full reference lands here ahead of launch.",
+    "An early overview of Nebbos: connectors, the agent interface, governance and approvals, and getting started. The full reference lands here ahead of launch.",
 });
 
 const topics = [
   { dep: "Connectors", title: "Read the stack you run", body: "Link the tools you already use through secure connectors. Nebbos reads the events they emit — tasks, messages, calendars, handoffs, tickets, deploys — and never replaces the systems they live in. The full connector reference and setup guides land here." },
-  { dep: "Agent interface (MCP)", title: "Drive Nebbos from your agents", body: "The same intelligence is available to your own agents and tools over a standard MCP interface, model-agnostic by design. Full API reference and examples land here." },
-  { dep: "Governance & approvals", title: "Earned, bounded, reversible", body: "How the approval gate, the G0–G3 governance tiers and the simulation gate work in practice — and how to configure autonomy that's earned over time, bounded to what's proven, and always reversible." },
+  { dep: "Agent interface", title: "Drive Nebbos from your agents", body: "The same intelligence is available to your own agents and tools over a standard agent interface that works with any AI provider. Full API reference and examples land here." },
+  { dep: "Governance & approvals", title: "Earned, bounded, reversible", body: "How the approval gate, the governance tiers and the simulation gate work in practice — and how to configure autonomy that's earned over time, bounded to what's proven, and always reversible." },
   { dep: "Getting started", title: "From connect to first prediction", body: "Connect your stack, stand up your first Pearl, and see your first prediction follow from the signal that's already there. A step-by-step guide lands here." },
 ];
 
@@ -51,7 +51,7 @@ export default function DocsPage() {
         </h2>
         <p className="mist" style={{ marginTop: 24, fontSize: 18, maxWidth: "60ch" }}>
           Nebbos is early, and so is this page. What&rsquo;s here is an honest overview of how the product
-          fits together — not yet the complete reference. The connector catalogue, the MCP API
+          fits together — not yet the complete reference. The connector catalogue, the agent API
           reference and the governance configuration guides are being written and will land here as
           they&rsquo;re ready.
         </p>

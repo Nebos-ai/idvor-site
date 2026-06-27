@@ -23,7 +23,7 @@ export default function DemoPage() {
       <PageHero
         eyebrow="Book a demo"
         title="See what your operations are about to do."
-        lead="Connect your stack and your first Pearl starts watching. Predictions begin as soon as there's enough signal. Tell us where to start and we'll set up a walkthrough on your own data."
+        lead="Connect your stack and your first Pearl — your department's agent — starts watching. Predictions begin as soon as there's enough signal. Tell us where to start and we'll set up a walkthrough on your own data."
       />
 
       <Section>

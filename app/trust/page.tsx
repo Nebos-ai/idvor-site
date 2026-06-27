@@ -52,7 +52,7 @@ export default function TrustPage() {
         <div style={{ marginTop: 32, display: "flex", gap: 10, flexWrap: "wrap" }}>
           <Chip lead>EU AI Act · high-risk ready</Chip>
           <Chip>GDPR</Chip>
-          <Chip>Tenant isolation · RLS</Chip>
+          <Chip>Tenant isolation · Access scoped by role</Chip>
           <Chip>Full audit trail</Chip>
         </div>
       </Section>

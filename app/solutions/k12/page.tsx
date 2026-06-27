@@ -8,7 +8,7 @@ export const metadata = pageMetadata({
   title: "K-12 Education",
   path: "/solutions/k12",
   description:
-    "Operations Intelligence for K-12 districts and schools. Nebbos surfaces the coverage gap, the missed compliance deadline and the stalled support case before they reach a family — on an owned, governed plane, with a human on every consequential call and a FERPA-aggregate posture by design.",
+    "Operations Intelligence for K-12 districts and schools. Nebbos surfaces the coverage gap, the missed compliance deadline and the stalled support case before they reach a family — in your own isolated, governed environment, with a human on every consequential call and a FERPA-aggregate posture by design.",
 });
 
 // K-12 is the lead vertical (ADR-278 AD-6) — most-developed industry page.
@@ -21,7 +21,7 @@ const pearls = [
 ];
 
 const howSteps = [
-  { dep: "Owned plane", title: "Your data stays yours", body: "Nebbos runs on an owned, governed plane: your operational signal lives in your own isolated tenant, enforced at the database. It reads from the systems your district already runs — there's nothing new for staff to adopt." },
+  { dep: "Your own environment", title: "Your data stays yours", body: "Your operational signal lives in your own isolated, governed tenant, enforced at the database. It reads from the systems your district already runs — there's nothing new for staff to adopt." },
   { dep: "Pearls", title: "A specialist per function", body: "One Pearl watches operations, another compliance, another student support. Each is scoped to its function, so its attention is narrow and its judgement specific — and each arrives having studied best practice for districts." },
   { dep: "Governed action", title: "Nothing acts alone", body: "Before anything consequential runs, it routes through a human approval gate and a simulation gate that rehearses the move against a private copy first. Every action is sourced, logged, and reversible." },
 ];
@@ -70,7 +70,7 @@ export default function K12Page() {
       <Section divider>
         <p className="eyebrow">How Nebbos addresses it</p>
         <h2 style={{ marginTop: 20, fontSize: "clamp(26px,3.6vw,44px)", maxWidth: "22ch" }}>
-          An owned, governed plane — built for the accountability a school is held to.
+          Your data stays in your own isolated, governed environment — built for the accountability a school is held to.
         </h2>
         <p className="mist" style={{ marginTop: 24, fontSize: 18, maxWidth: "60ch" }}>
           Nebbos isn&rsquo;t a dashboard bolted onto your data. It reads the operational signal your
@@ -126,7 +126,7 @@ export default function K12Page() {
         </div>
         <div style={{ marginTop: 32, display: "flex", gap: 10, flexWrap: "wrap" }}>
           <Chip lead>FERPA-aggregate by design</Chip>
-          <Chip>Role-scoped access · RLS</Chip>
+          <Chip>Access scoped by role</Chip>
           <Chip>Structured signal, not records</Chip>
           <Chip>Human approval gate</Chip>
           <Chip>Full audit trail</Chip>
